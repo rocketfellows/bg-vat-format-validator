@@ -3,6 +3,7 @@
 namespace rocketfellows\BGVatFormatValidator\tests\unit;
 
 use PHPUnit\Framework\TestCase;
+use rocketfellows\BGVatFormatValidator\BGVatFormatValidator;
 
 class BGVatFormatValidatorTest extends TestCase
 {
