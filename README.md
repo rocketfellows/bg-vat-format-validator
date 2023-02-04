@@ -33,7 +33,6 @@ true
 true
 true
 true
-true
 ```
 
 Invalid Bulgaria vat number:
