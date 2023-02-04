@@ -142,6 +142,22 @@ class BGVatFormatValidatorTest extends TestCase
                 'vatNumber' => '',
                 'isValid' => false,
             ],
+            [
+                'vatNumber' => 'AAAAAAAAA',
+                'isValid' => false,
+            ],
+            [
+                'vatNumber' => 'AAAAAAAAAA',
+                'isValid' => false,
+            ],
+            [
+                'vatNumber' => 'BGAAAAAAAAA',
+                'isValid' => false,
+            ],
+            [
+                'vatNumber' => 'BGAAAAAAAAAA',
+                'isValid' => false,
+            ],
         ];
     }
 }
