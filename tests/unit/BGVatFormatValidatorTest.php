@@ -99,6 +99,14 @@ class BGVatFormatValidatorTest extends TestCase
                 'isValid' => false,
             ],
             [
+                'vatNumber' => '012345667899',
+                'isValid' => false,
+            ],
+            [
+                'vatNumber' => '12345667',
+                'isValid' => false,
+            ],
+            [
                 'vatNumber' => 'BG0123456789A',
                 'isValid' => false,
             ],
