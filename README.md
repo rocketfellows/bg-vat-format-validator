@@ -20,13 +20,18 @@ Valid Bulgaria vat number:
 
 ```php
 $validator = new BGVatFormatValidator();
-$validator->isValid('');
-$validator->isValid('');
+$validator->isValid('BG123456789');
+$validator->isValid('BG0123456789');
+$validator->isValid('123456789');
+$validator->isValid('0123456789');
 ```
 
 Returns:
 
 ```shell
+true
+true
+true
 true
 true
 ```
@@ -35,11 +40,15 @@ Invalid Bulgaria vat number:
 
 ```php
 $validator = new BGVatFormatValidator();
-$validator->isValid('');
-$validator->isValid('');
+$validator->isValid('BG01234567899');
+$validator->isValid('BG01234567');
+$validator->isValid('012345667899');
+$validator->isValid('12345667');
 ```
 
 ```shell
+false
+false
 false
 false
 ```
@@ -49,4 +58,3 @@ false
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
 Please make sure to update tests as appropriate.
-
